@@ -14,8 +14,8 @@ func main()  {
 	// how to declare a slice (aka dynamic array) and add new values to it
 	// append does not modify existing slice, but rather returns a new slice and reassigns the variable
 
-	cards := deck{"Ace of Diamonds", newCard()}
-	cards = append(cards, "Six of Spades")
+	// cards := deck{"Ace of Diamonds", newCard()}
+	// cards = append(cards, "Six of Spades")
 
 	// // how to set up for loop in go
 
@@ -23,16 +23,18 @@ func main()  {
 	// 	fmt.Println(i, card)
 	// }
 
+	cards := newDeck()
+
 	cards.print()
 
 	fmt.Println(cards)
 }
 // functions can be declared in the same file as the main function, but if it will return value, need to specifically say what type it returns
 
-func newCard() string {
-	return "Five of Diamonds"
-}
+// func newCard() string {
+// 	return "Five of Diamonds"
+// }
 
-func secondNewCard() int {
-	return 12
-}
+// func secondNewCard() int {
+// 	return 12
+// }
