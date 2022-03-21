@@ -14,14 +14,16 @@ func main()  {
 	// how to declare a slice (aka dynamic array) and add new values to it
 	// append does not modify existing slice, but rather returns a new slice and reassigns the variable
 
-	cards := []string{"Ace of Diamonds", newCard()}
+	cards := deck{"Ace of Diamonds", newCard()}
 	cards = append(cards, "Six of Spades")
 
-	// how to set up for loop in go
+	// // how to set up for loop in go
 
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	// for i, card := range cards {
+	// 	fmt.Println(i, card)
+	// }
+
+	cards.print()
 
 	fmt.Println(cards)
 }
