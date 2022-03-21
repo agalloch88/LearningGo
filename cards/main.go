@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+// import "fmt"
 
 func main()  {
 	// var card string = "Ace of Spades"
@@ -33,7 +33,7 @@ func main()  {
 	// greeting := "Hi There!"
 	// fmt.Println([]byte(greeting))
 	cards := newDeck()
-	fmt.Println(cards.toString())
+	cards.saveToFile("my_cards")
 }
 // functions can be declared in the same file as the main function, but if it will return value, need to specifically say what type it returns
 
