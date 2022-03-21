@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main()  {
 	// var card string = "Ace of Spades"
 	// ^^ long-winded version of the below
@@ -25,9 +23,10 @@ func main()  {
 
 	cards := newDeck()
 
-	cards.print()
+	hand, remainingCards := deal(cards, 5)
 
-	fmt.Println(cards)
+	hand.print()
+	remainingCards.print()
 }
 // functions can be declared in the same file as the main function, but if it will return value, need to specifically say what type it returns
 
@@ -38,3 +37,7 @@ func main()  {
 // func secondNewCard() int {
 // 	return 12
 // }
+
+// slice range syntax:
+// fruits[startIndexIncluding : upToNotIncluding]
+// fruits[0:2], for example, returns indexes 0 and 1, but not 2
