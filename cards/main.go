@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main()  {
 	// var card string = "Ace of Spades"
 	// ^^ long-winded version of the below
@@ -21,12 +23,17 @@ func main()  {
 	// 	fmt.Println(i, card)
 	// }
 
+	// cards := newDeck()
+
+	// hand, remainingCards := deal(cards, 5)
+
+	// hand.print()
+	// remainingCards.print()
+
+	// greeting := "Hi There!"
+	// fmt.Println([]byte(greeting))
 	cards := newDeck()
-
-	hand, remainingCards := deal(cards, 5)
-
-	hand.print()
-	remainingCards.print()
+	fmt.Println(cards.toString())
 }
 // functions can be declared in the same file as the main function, but if it will return value, need to specifically say what type it returns
 
